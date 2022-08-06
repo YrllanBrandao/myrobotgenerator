@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+header > img{
+
+    margin: auto;
+    height: 50%;
+
+}
+header > h1{
+    font-size: clamp(1em, 1.2em, 1.5em);
+}
+.img-generated{
+    width: 40vw;
+    height: 40vh;
+
+}
+#ip-figure{
+    border-bottom: 2px solid #121629;
+}
+.container-main{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #232946;
+    
+}
+.loading{
+    display: flex;
+    gap: clamp(10px, .3vw, 15px);
+    display: none;
+}
+.loading-robot{
+    display: flex;
+    gap: clamp(10px, .3vw, 15px);
+    display: none;
+}
+.area-image{
+    width: 100vw;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.area-image > figure{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    padding: 0 5px ;
+     flex-direction: column;
+}
+figcaption{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+ 
+}
+figcaption > a{
+
+    width: 78%;
+}
+h1, h2, figcaption {
+    color: #fffffe;
+}
+q{
+   color: #b8c1ec;
+   text-align: center;
+}
+.generate-area{
+    display:flex ;
+   width: 100%;
+   align-items: center;
+   flex-direction: column-reverse;
+   
+}
+.main-area > h2{
+    font-size: clamp(.7em, 1em, 1.2em);
+}
+.main-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 1em;
+    gap: 1em;
+}
+
+#generated-robot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+    
+}
+#generated-robot > a{
+
+    width: 78%;
+}
+footer{
+    padding: 1em;
+}
+@media (min-width: 760px){
+    .area-image > figure{
+        width: 98%;
+        
+    }
+}
+@media (min-width: 900px){
+    header > img{
+
+        margin: 0;
+    }
+    header{
+        justify-content: center;
+        height: 21vh;
+    }
+    .container-main{
+        flex-direction: column;
+    }
+    .area-image > figure{
+        width: 50%;  
+      }
+
+      .area-image > figure{
+      
+        border-radius: 5px;
+        padding: 0 2px ;
+        
+    }
+
+    .generate-area{
+
+       width: 50%;
+       flex-direction: row;
+    }
+    .main-area{
+       
+        width: 50%;
+
+    }
+    figure{
+        width: 80%;
+    }
+    #generated-robot > a{
+
+        width: 50%;
+    }
+}
